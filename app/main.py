@@ -10,7 +10,6 @@ app = Flask(__name__)
 def return_backwards_string(random_string):
     return "".join(reversed(random_string))
 
-
 @app.route('/get-mode')
 def get_mode():
     return os.environ.get("MODE")
